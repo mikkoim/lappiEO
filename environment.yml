@@ -1,0 +1,77 @@
+name: lappieo
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+
+  # DL
+  - pytorch>=1.7.0
+  - torchvision>=0.8
+  - cudatoolkit>=11
+  - pytorch-lightning
+  - optuna
+  - wandb
+
+  # Geo
+  - rasterio
+  - geopandas
+  - imgaug
+  - xarray
+
+  # AutoML
+  - gxx_linux-64
+  - gcc_linux-64
+  - swig
+  - auto-sklearn
+  - tpot
+  - xgboost
+  - scikit-mdr
+  - skrebate
+
+
+  # DS
+  - numpy
+  - scipy
+  - scikit-learn>=0.22
+  - scikit-image
+  - pandas>=1.0.0
+  - opencv
+  - pillow>=6.0.0
+  - matplotlib
+  - seaborn
+  - tqdm
+  - numba
+  - dask
+  - dask-ml
+  - joblib
+
+  # ipython + notebooks
+  - ipython
+  - notebook
+  - jupyterlab
+  - ipywidgets
+
+  # Testing + linting
+  - pylint
+  - pytest
+
+  # Others
+  - openpyxl
+  - cupy
+  - pkg-config
+  - compilers
+  - libjpeg-turbo
+
+  - pip
+  - pip:
+    - ray
+    - ray[tune]
+    - hydra-core
+    - timm
+    - kornia
+    - black
+    - albumentations
+    - ffcv
+    - pyinstaller
